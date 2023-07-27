@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Portfolio</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <style>
+      #sidebar ul.components li.active a {
+        background-color: transparent;
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper d-flex align-items-stretch">
+      <nav id="sidebar">
+        <div class="custom-menu">
+          <button type="button" id="sidebarCollapse" class="btn btn-primary">
+            <i class="fa fa-bars"></i>
+            <span class="sr-only">Toggle Menu</span>
+          </button>
+        </div>
+        <div class="p-4">
+          <h1><a href="#" class="logo">DW</a></h1>
+          <ul class="list-unstyled components mb-5">
+            <li class="active">
+              <a href="#" onclick="changeContent('about')"
+                ><span class="fa fa-briefcase mr-3"></span> Professional
+                Summary</a
+              >
+            </li>
+            <li>
+              <a href="#" onclick="changeContent('skills')"
+                ><span class="fa fa-user mr-3"></span>Skills</a
+              >
+            </li>
+            <li>
+              <a href="#" onclick="changeContent('experience')"
+                ><span class="fa fa-briefcase mr-3"></span> Experience</a
+              >
+            </li>
+            <li>
+              <a href="#" onclick="changeContent('projects')"
+                ><span class="fa fa-sticky-note mr-3"></span> Projects</a
+              >
+            </li>
+            <li>
+              <a href="#" onclick="changeContent('certification')"
+                ><span class="fa fa-graduation-cap mr-2"></span>
+                Education/Certification</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <div id="content" class="px-md-5 py-md-3">
+        <div id="about">
+          <h1>Dasuni Wickramasinghe</h1>
+          <h5>AI | Software Engineer</h5>
+          <div style="display: flex">
+            <p>Email: dasuwickramasinghe@gmail.com</p>
+          </div>
+          <div style="display: flex">
+            <h6></h6>
+            <p>
+              LinkedIn:
+              <a href="https://www.linkedin.com/in/dasuni/"
+                >https://www.linkedin.com/in/dasuni/</a
+              >
+            </p>
+          </div>
+          <div style="display: flex">
+            <h6></h6>
+            <p>
+              GitHub:
+              <a href="https://github.com/Dasuni-Uthpala-Wickramasinghe"
+                >https://github.com/Dasuni-Uthpala-Wickramasinghe</a
+              >
+            </p>
+          </div>
+          <br />
+          <div>
+            <img class="my-image" src="./images/mypic.jpg" />
+          </div>
+          <div class="middle-content">
+            <p class="summary">
+              I am a versatile and experienced software developer with 3 years
+              of a strong foundation in web and mobile application development.
+              With expertise in a wide range of technologies, including React,
+              React Native, Typescript, JavaScript, Python, HTML5, CSS, PHP, and
+              Java, I have successfully delivered numerous projects that exceed
+              client expectations. My proficiency extends to database
+              management, working with MySQL, NoSQL, and Firebase. Additionally,
+              I possess a solid understanding of machine learning techniques,
+              particularly regression and tree-based classifiers, and have
+              practical experience in deep learning architectures such as CNN,
+              RNN, and MLP. I am also well-versed in NLP and have developed
+              Flask and Rest APIs. With a commitment to quality and innovation,
+              I thrive in collaborative environments, leveraging my skills to
+              create scalable and user-friendly solutions. Currently seeking new
+              challenges, I am excited to contribute my expertise to
+              cutting-edge projects while continuously learning and growing in
+              the ever-evolving field of technology.
+            </p>
+          </div>
+        </div>
+        <div id="skills" class="skills-body">
+          <h2 class="mb-4">Skills</h2>
+          <div id="header" class="header-skills">
+            <button onclick="changeBody('stack')"><a>Languages</a></button
+            >&nbsp;&nbsp;&nbsp;
+            <button onclick="changeBody('ai')"><a>AI|ML</a></button
+            >&nbsp;&nbsp;&nbsp;
+            <button onclick="changeBody('databases')"><a>Databases</a></button
+            >&nbsp;&nbsp;&nbsp;
+            <button onclick="changeBody('cloud')"><a>Cloud Services</a></button
+            >&nbsp;&nbsp;&nbsp;
+            <button onclick="changeBody('api')"><a>API</a></button>
+          </div>
+          <table id="table-content">
+            <tr class="stack-row active">
+              <td>
+                <div class="card-skill">
+                  <div class="circular-progress">
+                    <img class="box-img" src="../images/react.png" />
+                    <!-- <span class="progress-value">20%</span> -->
+                  </div>
+                  <span class="text">React</span>
+                </div>
+              </td>
+              <td>
+                <div class="card-skill">
+                  <div class="circular-progress">
+                    <img class="box-img" src="../images/typescript.png" />
+                  </div>
+                  <span class="text">Typescript</span>
+                </div>
+              </td>
+              <td>
+                <div class="card-skill">
+                  <div class="circular-progress">
+                    <img class="box-img" src="../images/react-native.png" />
+                  </div>
+                  <span class="text">React Native</span>
+                </div>
+              </td>
+              <td>
+                <div class="card-skill">
+                  <div class="circular-progress">
+                    <img class="box-img" src="../images/javascript.png" />
+                  </div>
+                  <span class="text">JavaScript</span>
+                </div>
+              </td>
+              <td>
+                <div class="card-skill">
+                  <div class="circular-progress">
+                    <img class="box-img" src="../images/python.png" />
+                  </div>
+                  <span class="text">Python</span>
+                </div>
+              </td>
+              <td>
+                <div class="card-skill">
+                  <div class="circular-progress">
+                    <img class="box-img" src="../images/java.png" />
+                  </div>
+                  <span class="text">Java</span>
+                </div>
+              </td>
+            </tr>
+            <tr class="stack-row active">
+              <td>
+                <div class="card-skill">
+                  <div class="circular-progress">
+                    <img class="box-img" src="../images/html.png" />
+                  </div>
+                  <span class="text">HTML</span>
+                </div>
+              </td>
+              <td>
+                <div class="card-skill">
+                  <div class="circular-progress">
+                    <img class="box-img" src="../images/c.png" />
+                  </div>
+                  <span class="text">C</span>
+                </div>
+              </td>
+              <td>
+                <div class="card-skill">
+                  <div class="circular-progress">
+                    <img class="box-img" src="../images/c++.png" />
+                  </div>
+
+                  <span class="text">C++</span>
+                </div>
+              </td>
+              <td>
+                <div class="card-skill">
+                  <div class="circular-progress">
+                    <img class="box-img" src="../images/cshaf.png" />
+                  </div>
+
+                  <span class="text">C#</span>
+                </div>
+              </td>
+              <td>
+                <div class="card-skill">
+                  <div class="circular-progress">
+                    <img class="box-img" src="../images/net.jpg" />
+                  </div>
+
+                  <span class="text">.Net</span>
+                </div>
+              </td>
+              <td>
+                <div class="card-skill">
+                  <div class="circular-progress">
+                    <img class="box-img" src="../images/php.png" />
+                  </div>
+
+                  <span class="text">PHP</span>
+                </div>
+              </td>
+            </tr>
+            <tr class="ai-row">
+              <td>
+                <!-- <div class="card-ai"> -->
+                <!-- <div class="circular-progress"> -->
+                <img class="ai-img" src="../images/Tensorflow.png" />
+
+                <!-- </div> -->
+                <!-- </div> -->
+              </td>
+              <td>
+                <!-- <div class="card-ai"> -->
+                <!-- <div class="circular-progress"> -->
+                <img class="ai-img" src="../images/nltk.png" />
+
+                <!-- </div> -->
+                <!-- <span class="text">NLTK</span> -->
+                <!-- </div> -->
+              </td>
+              <td>
+                <!-- <div class="card-ai"> -->
+                <!-- <div class="circular-progress"> -->
+                <img class="ai-img" src="../images/numpy.png" />
+
+                <!-- </div> -->
+                <!-- <span class="text">NumPy</span> -->
+                <!-- </div> -->
+              </td>
+
+              <td>
+                <!-- <div class="card-ai"> -->
+                <!-- <div class="circular-progress"> -->
+                <img class="ai-img" src="../images/pandas.png" />
+
+                <!-- </div> -->
+                <!-- <span class="text">Pandas</span> -->
+                <!-- </div> -->
+              </td>
+            </tr>
+            <tr class="ai-row">
+              <td>
+                <!-- <div class="card-ai"> -->
+                <!-- <div class="circular-progress"> -->
+                <img class="ai-img" src="../images/pytorch.jpg" />
+
+                <!-- </div> -->
+                <!-- <span class="text">PyTorch</span> -->
+                <!-- </div> -->
+              </td>
+              <td>
+                <!-- <div class="card-ai"> -->
+                <!-- <div class="circular-progress"> -->
+                <img class="ai-img" src="../images/scikit.png" />
+
+                <!-- </div> -->
+                <!-- <span class="text">Scikit</span> -->
+                <!-- </div> -->
+              </td>
+              <td>
+                <!-- <div class="card-ai"> -->
+                <!-- <div class="circular-progress"> -->
+                <img class="ai-img" src="../images/seaborn.png" />
+
+                <!-- </div> -->
+                <!-- <span class="text">Seaborn</span> -->
+                <!-- </div> -->
+              </td>
+              <td>
+                <!-- <div class="card-ai"> -->
+                <!-- <div class="circular-progress"> -->
+                <img class="ai-img" src="../images/pyshark.jpg" />
+
+                <!-- </div> -->
+                <!-- <span class="text">PySpark</span> -->
+                <!-- </div> -->
+              </td>
+            </tr>
+            <tr class="ai-row">
+              <td>
+                <!-- <div class="card-ai"> -->
+                <!-- <div class="circular-progress"> -->
+                <img class="ai-img" src="../images/matpotlib.png" />
+
+                <!-- </div> -->
+                <!-- <span class="text">Matplotlib</span> -->
+                <!-- </div> -->
+              </td>
+
+              <td>
+                <!-- <div class="card-ai"> -->
+                <!-- <div class="circular-progress"> -->
+                <img class="ai-img" src="../images/lightgmb.png" />
+
+                <!-- </div> -->
+                <!-- <span class="text">LightGBM</span>
+                </div> -->
+              </td>
+              <td>
+                <!-- <div class="card-ai"> -->
+                <!-- <div class="circular-progress"> -->
+                <img class="ai-img" src="../images/gensim.png" />
+
+                <!-- </div> -->
+                <!-- <span class="text">Gensim</span>
+                </div> -->
+              </td>
+              <td>
+                <!-- <div class="card-ai"> -->
+                <!-- <div class="circular-progress"> -->
+                <img class="ai-img" src="../images/kubeflow.png" />
+
+                <!-- </div> -->
+                <!-- <span class="text">Kubeflow</span>
+                </div> -->
+              </td>
+            </tr>
+            <tr class="databases-row">
+              <td>
+                <img class="ai-img" src="../images/firebase.png" />
+              </td>
+              <td>
+                <img class="ai-img" src="../images/mongo.png" />
+              </td>
+              <td>
+                <img class="ai-img" src="../images/msql.png" />
+              </td>
+              <td>
+                <img class="ai-img" src="../images/sqlite.png" />
+              </td>
+            </tr>
+
+            <tr class="cloud-row">
+              <td>
+                <img class="ai-img" src="../images/aws.png" />
+              </td>
+              <td>
+                <img class="ai-img" src="../images/azure.png" />
+              </td>
+              <td>
+                <img class="ai-img" src="../images/google.png" />
+              </td>
+            </tr>
+
+            <tr class="api-row">
+              <td>
+                <img class="ai-img" src="../images/flask.png" />
+              </td>
+              <td>
+                <img class="ai-img" src="../images/rest.png" />
+              </td>
+              <td>
+                <img class="ai-img" src="../images/openai.png" />
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div id="experience">
+          <h2 class="mb-4">Experience</h2>
+          <div id="accordion">
+            <div class="card">
+              <div class="card-header" id="headingOne">
+                <h5 class="mb-0">
+                  <h5
+                    class="btn btn-link"
+                    data-toggle="collapse"
+                    data-target="#collapseOne"
+                    aria-expanded="true"
+                    aria-controls="collapseOne"
+                  >
+                    Software Engineer, Frost Experience AB (2021 – 2022)
+                  </h5>
+                </h5>
+              </div>
+
+              <div
+                id="collapseOne"
+                class="collapse show"
+                aria-labelledby="headingOne"
+                data-parent="#accordion"
+              >
+                <div class="card-body">
+                  • Analyzed complex system requirements; designed software
+                  tools and sub-modules to support software reuse domain
+                  analyses.<br />
+                  • Executed full lifecycle development, including software
+                  engineering life-cycle design, development, integration and
+                  maintenance support.<br />
+                  • Developed, documented, and maintained architectures,
+                  requirements, algorithms, interfaces and designs for software
+                  systems.<br />
+                  • Created and maintained code and integrated software
+                  components into fully functional software system.<br />
+                  • Developed software verification plans, test procedures and
+                  test environments, executing the test procedures and
+                  documenting test results to ensure software system
+                  requirements were met.<br />
+                  • Served as a subject matter expert for software domains,
+                  system-specific issues, processes and regulations<br />
+                  • Translated detailed design architecture into a computer
+                  software application; tested, debugged, and refined the
+                  computer software using related tools and methodologies to
+                  produce the required product.<br />
+                  • Prepared required documentation, including both application
+                  level user level documentation.<br />
+                  • Enhanced software application to reduce operating time to
+                  improve efficiency.<br />
+                  • Provided technical guidance in software engineering
+                  techniques and automated support tools.<br />
+                  • Worked with developers to ensure program deadlines were
+                  met.<br />
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingTwo">
+                <h5 class="mb-0">
+                  <h5
+                    class="btn btn-link collapsed"
+                    data-toggle="collapse"
+                    data-target="#collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="collapseTwo"
+                  >
+                    Associate Software Engineer, Beta Launch (2020 – 2021)
+                  </h5>
+                </h5>
+              </div>
+              <div
+                id="collapseTwo"
+                class="collapse"
+                aria-labelledby="headingTwo"
+                data-parent="#accordion"
+              >
+                <div class="card-body">
+                  • Worked on a document signing similar to “DocuSign”;
+                  developed React components based design system.<br />
+                  • Developed reusable, user and mobile-friendly Ul; integrated
+                  Uls with JSON rest APIs.<br />
+                  • Solve issues; took part in the estimation, design, and
+                  development of key system features; evaluated and recommended
+                  the adoption of open-source and new technologies.<br />
+                  • Created efficient, reusable, and reliable code; ensured
+                  cross-technical integration; participated in peer reviews and
+                  adoption of standard coding processes.<br />
+                  • Ensured the best possible performance, quality, and
+                  responsiveness of the applications.<br />
+                  • Identified bottlenecks and bugs, and devised solutions to
+                  these problems.<br />
+                  • Resolved production issues based on priority - with a focus
+                  on unblocking the customer, and ensuring problems do not
+                  recur.<br />
+                  • Mentored junior team members and enabled staff to work
+                  independently to meet goals.<br />
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingThree">
+                <h5 class="mb-0">
+                  <h5
+                    class="btn btn-link collapsed"
+                    data-toggle="collapse"
+                    data-target="#collapseThree"
+                    aria-expanded="false"
+                    aria-controls="collapseThree"
+                  >
+                    Software Engineer Intern, Al - Beta Launch (2020 – 2021)
+                  </h5>
+                </h5>
+              </div>
+              <div
+                id="collapseThree"
+                class="collapse"
+                aria-labelledby="headingThree"
+                data-parent="#accordion"
+              >
+                <div class="card-body">
+                  • Designed and developed web Proof of Concept (POC) for
+                  predicting property complains.<br />
+                  • Researched yield curve forecasting using Nelson Siegel and,
+                  Nelson Svensson.<br />
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingFour">
+                <h5 class="mb-0">
+                  <h5
+                    class="btn btn-link collapsed"
+                    data-toggle="collapse"
+                    data-target="#collapseFour"
+                    aria-expanded="false"
+                    aria-controls="collapseFour"
+                  >
+                    Software Developer Intern, Mitra Innovation (2020)
+                  </h5>
+                </h5>
+              </div>
+              <div
+                id="collapseFour"
+                class="collapse"
+                aria-labelledby="headingFour"
+                data-parent="#accordion"
+              >
+                <div class="card-body">
+                  • Wrote test cases using Jest framework to ensure the
+                  functionality and reliability of software components and
+                  features.<br />
+                  • Worked with Git-based version control systems such as GitHub
+                  and Bitbucket to manage code changes and track progress.<br />
+                  • Designed user interfaces using Zipline, ensuring an
+                  intuitive and visually appealing user experience that met
+                  project requirements.<br />
+                  • Created reusable components and features for future use in
+                  the project, streamlining development and improving code
+                  quality. VHS.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="projects">
+          <h2 class="mb-4">Projects</h2>
+          <p>This is the Projects section content.</p>
+        </div>
+        <div id="certification">
+          <h2 class="mb-4">Education</h2>
+          <div>
+            <h6 style="color: black;"><b>
+              Artificial Intelligence postgradute Certificate
+              2023 January -  2023 August</b>
+            </h6>
+            <b style="color: black;">Cumilative GPA 4.85/5.0</b
+            ><br />
+            <b style="color: black;">UNDERGRADUATE RESEARCH PROJECT</b>
+            <p style="color: black;">
+              Explored the history, current trends, and future applications of Artificial Intelligence (AI) in various industries.
+              Gained knowledge of subfields of AI and its real-world problem-solving capabilities.
+              Developed effective communication skills through digital and print outputs, including Augmented Reality (AR) using Microsoft Hololens and Apple AR Kits.
+              Studied Machine Learning (ML) algorithms, including supervised, unsupervised, and reinforcement learning, for accurate data analysis and prediction.
+              Acquired an introduction to Neural Networks and Deep Learning models.
+              Applied mathematics concepts essential in AI systems, such as calculus, algebra, statistics, and probability.
+              Mastered deep learning with Python frameworks, focusing on Natural Language Processing and Computer Vision.
+              Explored advanced AI research and integration into various industry sectors to solve real-world problems.
+              Studied data acquisition, uncertain information handling, expert systems, evolutionary computation, and agent-based model training.
+              Developed a personal career plan and created a professional portfolio with an online presence to support career goals.
+              Acquired skills in proposal writing, consulting reports, and other professional communications.
+              Learned to evaluate and utilize AI tools for building AI-based software solutions.
+              Explored the integration and deployment of AI products within enterprise solutions.
+              Successfully completed projects demonstrating expertise in mathematics, programming, machine learning, and deep learning tools.
+            </p>
+          </div>
+          <div>
+            <h6 style="color: black;"><b>
+              BSc (Hons) in Computer Science and Software Engineering at Sri
+              Lanka Institute of Information Technology (SLIIT), affiliated to
+              University of Bedfordshire, UK | Graduated Year 2021 February |
+              2020 February - February 2021</b>
+            </h6>
+            <b style="color: black;">Graduated with a Second Class, Upper Division | GPA -62%</b
+            ><br />
+            <b style="color: black;">UNDERGRADUATE RESEARCH PROJECT</b>
+            <p style="color: black;">
+              Plantina: The plant suggestion system according to soil type based
+              on Internet of Things (IOT). In this research, “Plantina'', an IOT
+              based plant recommender system using soil profiles was developed.
+              A sensor developed to measure temperature, pH, humidity, and
+              moisture level of the soil. Those details were sent to the Android
+              application and predicted the suitable plant types according to
+              the pH and temperature of the soil the user had. The user can take
+              images of plants and can see the best soil types suitable for the
+              captured plant.
+            </p>
+          </div>
+          <div>
+            <h5><b>
+              SLIIT (Sri Lanka Institute of Information Technology) | 2018
+              February – November 2019</b>
+            </h5>
+            <b  style="color: black;">Higher National Diploma in Computer Science - GPA 3.32</b><br />
+            <p  style="color: black;">
+              During these two years, learned main theories such as OOP
+              concepts, Data Structure and Algorithm (DSA), Object Oriented
+              Analysis & Design (OOAD), TCP/IP networking concepts, Mathematics
+              for Information Technology (Differentiation, Integration,
+              Calculus), Object Relational Database Management Systems (ORDMS),
+              and gained practical experience which conducted parallel to each
+              subject. The examination marks were allocated to both written and
+              practical knowledge.
+            </p>
+          </div>
+          <div>
+            <h2>CERTIFICATION</h2>
+            <p  style="color: black;">2020 - Annual Research Symposium at SLIIT Academy</p>
+            <p  style="color: black;">2020 - NLP and Text mining with python on Udemy</p>
+            <p  style="color: black;">2018 – Web development using PHP/MySQL program at SLIIT.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      let options = {
+        startAngle: -1.55,
+        size: 150,
+        value: 0.85,
+        fill: { gradient: ["#a445b2", "#fa4299"] },
+      };
+      $(".circle .bar")
+        .circleProgress(options)
+        .on("circle-animation-progress", function (event, progress, stepValue) {
+          $(this)
+            .parent()
+            .find("span")
+            .text(String(stepValue.toFixed(2).substr(2)) + "%");
+        });
+      $(".js .bar").circleProgress({
+        value: 0.7,
+      });
+      $(".node .bar").circleProgress({
+        value: 0.9,
+      });
+      $(".react .bar").circleProgress({
+        value: 0.6,
+      });
+    </script>
+
+    <script>
+      document.getElementById("about").classList.add("active");
+
+      window.addEventListener("DOMContentLoaded", function () {
+        var sections = document.querySelectorAll("#content > div");
+        sections.forEach(function (element) {
+          element.style.display = "none";
+        });
+        document.getElementById("about").style.display = "block";
+      });
+      function changeContent(section) {
+        var menuItems = document.querySelectorAll("#sidebar ul.components li");
+        menuItems.forEach(function (item) {
+          item.classList.remove("active");
+        });
+
+        var sections = document.querySelectorAll("#content > div");
+        sections.forEach(function (element) {
+          element.style.display = "none";
+        });
+
+        var selectedSection = document.getElementById(section);
+        if (selectedSection) {
+          selectedSection.style.display = "block";
+        }
+      }
+    </script>
+
+    <script>
+      document.querySelector(".stack-row").classList.add("active");
+
+      function changeBody(section) {
+        // Hide all rows
+        var rows = document.querySelectorAll("#table-content tr");
+        rows.forEach(function (row) {
+          row.classList.remove("active");
+        });
+
+        // Show the selected row(s)
+        var selectedRows = document.querySelectorAll("." + section + "-row");
+        selectedRows.forEach(function (row) {
+          row.classList.add("active");
+        });
+      }
+    </script>
+    <script>
+      function toggleDropdown(dropdownId) {
+        // Get the clicked dropdown content
+        var dropdownContent = document.getElementById(dropdownId);
+
+        // Check if the dropdown is already open
+        var isAlreadyOpen = dropdownContent.style.display === "block";
+
+        // Hide all dropdowns
+        var dropdownContents =
+          document.getElementsByClassName("dropdown-content");
+        for (var i = 0; i < dropdownContents.length; i++) {
+          dropdownContents[i].style.display = "none";
+        }
+
+        // If the clicked dropdown was closed, open it; otherwise, close all dropdowns
+        if (!isAlreadyOpen) {
+          dropdownContent.style.display = "block";
+        }
+      }
+    </script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
